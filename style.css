@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header { 
+    width: 100%;
+}
+
+.background {
+    background: url(img/bgc.svg) no-repeat center center;
+    width: 100%;
+    min-height: 100vh; /* Вместо height: 100vh для растягивания фона на всю высоту контента */
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем контент по вертикали */
+    align-items: center; /* Центрируем контент по горизонтали */
+}
+
+
+h1 {
+    font-family: 'Plumb';
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 130%;
+    color: #FFFFFF;
+    letter-spacing: -0.01em;
+    margin-left: 15px;
+    margin-right: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+
+.more-info1 { 
+    display: flex;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+.more-info {
+    display: flex;
+    margin-left: 40px;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.container {
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-line-section {
+    padding: 24px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.button {
+    display: flex;
+}
+
+.search {
+    margin-right: 40px;
+}
+
+.globus {
+    margin-right: 10px;
+}
+
+.english {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.header-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.info {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 200px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Два столбца */
+    gap: 30px;
+    width: 5%;
+    max-width: 1200px;  /* Максимальная ширина */
+    margin-top: 30px;
+    justify-items: start; /* Выравнивание по левому краю */
+    padding-left: 50px; /* Отступ слева */
+    margin: 0 auto; /* Центрирование */
+}
+
+
+.calendar, .navigator, .online, .plan {
+    width: 100%;  /* Задайте 100% ширины для блоков */
+    max-width: 255px;  /* Максимальная ширина для блоков */
+    height: 175px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 10px;  
+    margin-bottom: 10px; /* Для отступов между блоками */
+}
+.header-name { 
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+}
+
+.calendar {
+    background: #2378FC;
+}
+
+.navigator {
+    background: #30BCC9;
+}
+
+.online {
+    background: #FFC41E;
+}
+
+.plan {
+    background: #F6404F;
+}
+
+.bg2 {
+    background: url(img/bgc2.svg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+padding: 200px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.cardtop {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;  
+}
+
+.headcard {
+    font-family: 'Circe';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding-bottom: 10px; 
+}
+
+.cardbottom {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-top: 10px; 
+    width: 100%;
+}
+
+.events-section {
+    background: url(img/bgc3.svg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 200px;
+}
+.events-section img {
+    max-width: 100%;
+    height: auto;
+    display: inline;
+}
+.events-section h2 {
+    margin-bottom: 10px;
+}
+
+.all-events-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+}
+
+.event-card {
+    width: 100%;
+    height: auto;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+}
+
+.all-events {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-events h2 {
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 30px;
+    color: #2E373B;
+}
+
+.all-events h4 {
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 21px;
+    color: #2E373B;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #555;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #777;
+}
+
+.event-card h3 {
+    margin: 10px 0;
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 21px;
+    color: #F6404F;
+}
+
+.bgc4 {
+    background: url(img/bgc4.svg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 200px;
+}
+
+.news-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-news {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card {
+    width: 100%;
+    height: 215px;
+}
+
+.side-news {
+    flex: 1;
+}
+
+.side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1px;
+}
+
+.side-header h2 {
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 30px;
+    color: #2E373B;
+}
+
+.all-news-link {
+    display: flex;
+    align-items: center;
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 21px;
+    color: #2E373B;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.all-news-link img {
+    margin-left: 5px;
+}
+
+.side-news-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.side-news-item img {
+    width: 100%;
+    height: 120px;
+}
+
+.news-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-date {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 16px;
+    color: #F6404F;
+}
+
+.news-title {
+    font-family: 'Plumb';
+    font-weight: 500;
+    font-size: 21px;
+    color: #2E373B;
+}
+
+/* Footer */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background: url(img/footer1.svg);
+    background-size: cover;
+    width: 100%;
+    height: 476px;
+        padding-top: 60px;
+        padding-bottom: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin: 0;
+        padding: 0; 
+        font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 135%;
+/* identical to box height, or 19px */
+
+color: #E0E0E0;
+    }
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+.parent h4 {
+    font-family: 'Plumb';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 130%;
+margin-bottom: 10px;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-items,
+.footer-items-company,
+.footer-items-press,
+.footer-items-soc,
+.footer-items-apps,
+.footer-items-subs {
+    text-align: left;
+}
+
+/* Медиазапросы для адаптивности */
+
+@media (max-width: 1200px) {
+    .content-wrapper {
+        grid-template-columns: repeat(1, 1fr);  /* Один столбец */
+    }
+    
+    .calendar, .navigator, .online, .plan {
+        width: 100%;  /* Задаем ширину блоков 100% */
+        max-width: 100%;  /* Убираем максимальную ширину */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr); /* Уменьшаем количество столбцов */
+        height: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .side-news{
+        margin: auto;
+    }
+
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardtop {
+        flex-direction: column;
+    }
+
+
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .parent {
+        grid-template-columns: 1fr; /* Один столбец */
+        padding: 20px;
+        text-align: center; /* Центрируем текст */
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+
+    .content-wrapper {
+        grid-template-columns: repeat(1, 1fr);  /* Один столбец */
+    }
+
+    .calendar, .navigator, .online, .plan {
+        width: 100%;  /* Задаем ширину 100% */
+        max-width: 100%;  /* Убираем максимальную ширину */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .bg2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .events-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-section {
+        flex-direction: column;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+    }
+
+    .cardtop {
+        flex-direction: column;
+    }
+    .side-news{
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .parent {
+        height: auto; /* Позволяем footer растягиваться по высоте */
+    }
+
+    .social-icons img {
+        width: 24px; /* Уменьшаем размер иконок */
+        height: 24px;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .calendar, .navigator, .online, .plan {
+        width: 100%;  /* Задаем ширину 100% */
+        max-width: 100%;  /* Убираем максимальную ширину */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+    }
+}
